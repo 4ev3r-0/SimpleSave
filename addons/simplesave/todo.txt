@@ -1,0 +1,69 @@
+[x] Core plugin foundation
+    [x] EditorPlugin created and loads successfully
+    [x] plugin.cfg configured and recognized by Godot
+    [x] Plugin enables/disables from Project Settings
+    [x] Dock appears inside editor
+
+[x] Dock UI
+    [x] SimplesaveDock scene created
+    [x] Dock script attached to scene
+    [x] Basic layout (VBoxContainer, button, list)
+    [x] Register button connected to script
+
+[x] Editor integration
+    [x] Selected node retrieved from editor
+    [x] Selected node passed into dock refresh
+    [x] Exported properties read from node.get_property_list()
+
+[x] Serialization
+    [x] JSON serialization implemented
+    [x] Save manager created
+    [x] Slot-based folders (slot_0, slot_1, etc.)
+    [x] Per-node JSON files inside slots
+
+[x] File system layer
+    [x] Auto-create slot directories
+    [x] Write JSON files per node
+    [x] Read JSON files per node
+    [x] Clear slot function
+
+[x] Runtime API (basic)
+    [x] SimpleSave entry script exists
+    [x] save_slot / load_slot implemented
+    [x] schema registry (dictionary-based) exists
+
+[x] Encryption (prototype)
+    [x] Encryption wrapper created
+    [x] Enable/disable flag exists
+    [x] Integrated into save/load flow
+
+[ ] Core behavior still missing
+    [ ] Link saved data to real node instances (not just names)
+    [ ] Apply loaded values back into scene nodes
+    [ ] Capture live node state before saving
+
+[ ] Editor improvements
+    [ ] Auto-refresh dock on node selection change
+    [ ] Empty state when no node selected
+    [ ] Better property selection (checkboxes instead of list)
+    [ ] Visual indicator for registered nodes
+
+[ ] Save system upgrades
+    [ ] Slot metadata (time, version, playtime)
+    [ ] Slot listing / browser UI
+    [ ] Overwrite confirmation
+
+[ ] Encryption upgrade
+    [ ] Replace placeholder encoding with real encryption
+    [ ] Optional per-slot password/key
+    [ ] Persist encryption settings
+
+[ ] Stability
+    [ ] Handle missing files safely
+    [ ] Handle invalid JSON without crashing
+    [ ] Null-safe dock refresh
+
+[ ] Quality of life
+    [ ] Test save/load buttons in editor
+    [ ] Debug toggle for logs
+    [ ] One-click save/load for current scene

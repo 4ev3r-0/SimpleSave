@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://7hxire0qc7d7"]
+
+[ext_resource type="Script" uid="uid://dxspa5x03k3qh" path="res://addons/simplesave/editor/simplesave_dock.gd" id="1_tv6jp"]
+
+[node name="SimplesaveDock" type="Control" unique_id=57810877]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tv6jp")
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=848038530]
+layout_mode = 0
+offset_right = 164.0
+offset_bottom = 128.0
+
+[node name="Label" type="Label" parent="VBox" unique_id=1186280978]
+layout_mode = 2
+text = "SimpleSave"
+
+[node name="PropertyList" type="ItemList" parent="VBox" unique_id=943144454]
+layout_mode = 2
+
+[node name="RegisterButton" type="Button" parent="VBox" unique_id=348086116]
+layout_mode = 2
